@@ -1,0 +1,102 @@
+body {
+    background-image:linear-gradient(80deg ,rgb(37, 172, 235), white);
+    
+}
+.sol {
+    border: 1px solid rgb(253, 249, 5);
+    background:rgb(241, 241, 24);
+    width:205px;
+    height: 205px;
+    border-radius:105px;
+}
+.cloud img {
+    position: relative;
+    /* display:flex; */
+    min-width:19vw;
+    min-height:26vh;
+    max-width:19vw;
+    max-height:15vh;
+}
+.cloud1 img {
+    position: relative;
+    min-width:19vw;
+    min-height:8vh;
+    max-width:18vw;
+    max-height:15vh;
+}
+.cloud2 img {
+    min-height:26vh;
+    max-width:19vw;
+}
+.clouds {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.grass img{
+    margin: -8px;
+    position: relative;;
+    height:69.5vh;
+    min-width: 100vw;
+    
+}
+
+.bird {
+    width:182.8px;
+    height:170px;
+    background: url("bird.png")0 0;
+    animation: fly 3s steps(5) infinite, move 4s linear  infinite;
+    position:absolute;
+    top:214px;
+    
+}
+@keyframes move {
+    0%{transform: translateX(0px);}
+    100%{transform: translateX(918px);}
+}
+@keyframes fly {
+    0%{background-position:918px;}
+    100%{background-position:0px;}
+}
+.cloud {
+   left: 42px;
+   animation: fly 3s infinite, move 7s linear  infinite;
+   position:absolute;
+   top:69px;
+}
+    @keyframes move {
+        0%{transform: translateX(0px);}
+        100%{transform: translateX(918px);}
+    }
+    @keyframes fly {
+        0%{background-position:918px;}
+        100%{background-position:0px;}
+    }
+.cloud1 {
+   left: -10px;
+   animation: fly 3s infinite, move 7s linear  infinite;
+   position:absolute;
+   top:69px;
+}
+    @keyframes move {
+        0%{transform: translateX(0px);}
+        100%{transform: translateX(918px);}
+    }
+    @keyframes fly {
+        0%{background-position:918px;}
+        100%{background-position:0px;}
+    }
+.cloud2 {
+   left: -38px;
+   animation: fly 3s infinite, move 5s linear  infinite;
+   position:absolute;
+   top:69px;
+}
+    @keyframes move {
+        0%{transform: translateX(0px);}
+        100%{transform: translateX(918px);}
+    }
+    @keyframes fly {
+        0%{background-position:918px;}
+        100%{background-position:0px;}
+    }
